@@ -1,7 +1,8 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Creates a matrix that may contain a cached inverse matrix
+## Creates a matrix wrapper that will cache the inverse matrix once the inverse matrix is requested.
+## There is no error checking and the matrix must be valid to determine the inverse matrix.
 
 makeCacheMatrix <- function(x = matrix()) {
         cachedinverse <- NULL
